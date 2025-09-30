@@ -85,3 +85,27 @@ App runs at: http://localhost:8501
 
 See deployment/ngrok_setup.txt for details.
 use pyngrok with start_with_pyngrok.py.
+
+## 📸 Streamlit Web UI
+
+Here are some screenshots from the deployed app:
+
+### Full UI
+![Full UI](screenshots/ui_full.jpg)
+
+### Patient Inputs
+![Inputs 1](screenshots/inputs_1.jpg)
+![Inputs 2](screenshots/inputs_2.jpg)
+
+### Dataset Visualizations
+**Distributions**
+![Distributions](screenshots/distributions.jpg)
+
+**Correlation Heatmap**
+![Correlation](screenshots/correlation.jpg)
+
+**Chest Pain Types**
+![Pain Types](screenshots/pain_types.jpg)
+
+**Age vs Cholesterol (Relationships)**
+![Relationships](screenshots/relationships.jpg)
