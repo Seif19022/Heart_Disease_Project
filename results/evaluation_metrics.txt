@@ -1,0 +1,17 @@
+Supervised Learning Models - Final Evaluation
+==================================================
+
+              Model  Accuracy  Precision   Recall  F1-score      AUC
+Logistic Regression  0.826087   0.824074 0.872549  0.847619 0.901961
+      Decision Tree  0.728261   0.760000 0.745098  0.752475 0.726208
+      Random Forest  0.831522   0.838095 0.862745  0.850242 0.920074
+                SVM  0.804348   0.789474 0.882353  0.833333 0.906504
+
+Tuned Models (2.6):
+               Model                                                                                                                       BestParams  Accuracy  Precision   Recall       F1      AUC
+RandomForest (tuned) {'bootstrap': True, 'max_depth': 5, 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 11, 'n_estimators': 469}  0.842391   0.834862 0.892157 0.862559 0.924319
+      LogReg (tuned)                                                                                                        {'C': 1, 'penalty': 'l2'}  0.826087   0.824074 0.872549 0.847619 0.901961
+         SVM (tuned)                                                  {'C': np.float64(29.630728443102125), 'gamma': np.float64(0.04655041271999773)}  0.809783   0.796460 0.882353 0.837209 0.900287
+DecisionTree (tuned)                                            {'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 8, 'min_samples_split': 20}  0.788043   0.818182 0.794118 0.805970 0.843257
+
+Best model: Random Forest (tuned)

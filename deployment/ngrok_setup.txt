@@ -1,0 +1,63 @@
+# Ngrok Deployment Guide for Heart_Disease_Project
+# ------------------------------------------------
+
+## Option A: Standard ngrok.exe (if available)
+
+1. Activate your virtual environment:
+   venv\Scripts\activate
+
+2. Run the Streamlit app locally:
+   python -m streamlit run "Heart_Disease_Project/ui/app.py"
+   # App runs at http://localhost:8501
+
+3. Start ngrok tunnel (in a second terminal):
+   ngrok http 8501
+
+4. Copy the public link shown, for example:
+   Forwarding https://abcd-1234.ngrok-free.app -> http://localhost:8501
+
+   Share the https://abcd-1234.ngrok-free.app link for live access.
+
+Notes:
+- Add your auth token once:
+  ngrok config add-authtoken YOUR_NGROK_TOKEN
+- Ensure ngrok.exe is installed from https://ngrok.com/download
+
+
+## Option B: Pyngrok (recommended if ngrok.exe cannot be used)
+
+1. Activate your virtual environment:
+   venv\Scripts\activate
+
+2. Install pyngrok:
+   pip install pyngrok
+
+3. Create a new file:
+   Heart_Disease_Project/deployment/start_with_pyngrok.py
+
+   Contents:
+
+   ```python
+   import subprocess, time
+   from pyngrok import ngrok
+
+   # 1) Start Streamlit app
+   app = subprocess.Popen([
+       "python", "-m", "streamlit", "run",
+       "Heart_Disease_Project/ui/app.py",
+       "--server.port=8501", "--server.address=127.0.0.1"
+   ])
+
+   # 2) Authenticate (only once per machine)
+   ngrok.set_auth_token("YOUR_NGROK_TOKEN")
+
+   # 3) Open tunnel
+   public_url = ngrok.connect(8501, "http")
+   print("Public URL:", public_url)
+
+   try:
+       while True:
+           time.sleep(1)
+   except KeyboardInterrupt:
+       ngrok.kill()
+       app.terminate()

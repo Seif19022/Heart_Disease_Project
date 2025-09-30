@@ -1,0 +1,34 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Model and data files (optional – keep only final_model.pkl & processed CSVs)
+*.joblib
+*.pkl
+*.csv
+!data/heart_disease.csv
+!models/final_model.pkl
+
+# IDE/project files
+.vscode/
+.idea/
+*.iml
