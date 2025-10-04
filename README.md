@@ -91,7 +91,7 @@ use pyngrok with start_with_pyngrok.py.
 Here are some screenshots from the deployed app:
 
 ### Full UI
-![Full UI](screenshots/Fullui.jpg)
+![Full UI](screenshots/ui.jpg)
 
 ### Patient Inputs
 ![Inputs 1](screenshots/inputs1.jpg)
@@ -105,7 +105,7 @@ Here are some screenshots from the deployed app:
 ![Correlation](screenshots/correlation.jpg)
 
 **Chest Pain Types**
-![Pain Types](screenshots/pain_types.jpg)
+![Pain Types](screenshots/paintypes.jpg)
 
 **Age vs Cholesterol (Relationships)**
 ![Relationships](screenshots/relationships.jpg)
