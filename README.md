@@ -108,4 +108,4 @@ Here are some screenshots from the deployed app:
 ![Pain Types](screenshots/paintypes.jpg)
 
 **Age vs Cholesterol (Relationships)**
-![Relationships](screenshots/relationships.jpg)
+![Relationships](screenshots/Relationships.jpg)
