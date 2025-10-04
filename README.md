@@ -1,7 +1,7 @@
 # Heart Disease Prediction Project
 
 This project is part of the **AI & ML Summer Camp** (Sprints x Microsoft).  
-We developed a full ML pipeline to predict heart disease, from preprocessing to deployment.
+I developed a full ML pipeline to predict heart disease, from preprocessing to deployment.
 
 ---
 
@@ -53,11 +53,11 @@ Heart_Disease_Project/
    - Full preprocessing + feature selection + tuned RF saved in pipeline  
    - Saved as `models/final_model.pkl`  
 
-8. **Streamlit UI (2.8)** [Bonus]  
+8. **Streamlit UI (2.8)** 
    - Interactive web app for user input & prediction  
    - Visualizations of trends  
 
-9. **Ngrok Deployment (2.9)** [Bonus]  
+9. **Ngrok Deployment (2.9)**  
    - Deployment instructions in `deployment/ngrok_setup.txt`  
    - `start_with_pyngrok.py` for public link  
 
@@ -68,7 +68,7 @@ Heart_Disease_Project/
 
 ## 🛠️ Setup Instructions
 ### 1. Create virtual environment
-```bash
+
 py -3.12 -m venv venv
 venv\Scripts\activate
 
