@@ -91,11 +91,11 @@ use pyngrok with start_with_pyngrok.py.
 Here are some screenshots from the deployed app:
 
 ### Full UI
-![Full UI](screenshots/ui_full.jpg)
+![Full UI](screenshots/Fullui.jpg)
 
 ### Patient Inputs
-![Inputs 1](screenshots/inputs_1.jpg)
-![Inputs 2](screenshots/inputs_2.jpg)
+![Inputs 1](screenshots/inputs1.jpg)
+![Inputs 2](screenshots/inputs2.jpg)
 
 ### Dataset Visualizations
 **Distributions**
